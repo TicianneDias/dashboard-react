@@ -1,9 +1,15 @@
 import React from 'react'
-import Header from '../components/Header/Header'
+import Nav from '../components/Nav/Nav'
+import DashboardBar from '../components/DashboardBar/DashboardBar'
+import DashboardScatter from '../components/DashboardScatter/DashboardScatter'
 
 const Home = () => {
   return (
-    <Header/>
+    <>
+      <Nav/>
+      <DashboardBar/>
+      <DashboardScatter/>
+    </>
   )
 }
 
