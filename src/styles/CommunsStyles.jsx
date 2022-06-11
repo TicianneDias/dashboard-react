@@ -23,3 +23,37 @@ export const Title = styled.div`
         }
     }
 `;
+
+export const TooltipText = styled.div`
+  cursor: pointer;
+`;
+export const TooltipBox = styled.div`
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -20px;
+  visibility: hidden;
+  width: 180px;
+  padding: 5px;
+  border-radius: 4px;
+
+  transition: all 1ms ease-in-out;
+
+  &:before {
+    left: 40px;
+    top: -10px;
+    position: absolute;
+  }
+`;
+export const TooltipCard = styled.div`
+  position: relative;
+  & ${TooltipText}:hover + ${TooltipBox} {
+    visibility: visible;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    z-index: 1;
+
+    h5 {
+        color: var(--color-primary);
+    }
+  }
+`;

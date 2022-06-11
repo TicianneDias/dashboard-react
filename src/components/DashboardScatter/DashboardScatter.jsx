@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import { DashScatterContainer } from "./styles";
-import { Title } from "../../styles/CommunsStyles";
+import { Title, TooltipBox, TooltipCard, TooltipText } from "../../styles/CommunsStyles";
 import { BsFillInfoCircleFill } from 'react-icons/bs'
 
 class App extends Component {
@@ -56,9 +56,14 @@ class App extends Component {
             <div>
               <h1>Scatter</h1>
             </div>
-            <div>
-              <BsFillInfoCircleFill id="infoIcon" />
-            </div>
+            <TooltipCard>
+              <TooltipText>
+                <BsFillInfoCircleFill id="infoIcon" />
+              </TooltipText>
+              <TooltipBox>
+                <h5>Este é um modelo de dashboard em Scatter com 3 exemplos</h5>
+              </TooltipBox>
+            </TooltipCard>
           </Title>
           <Chart options={this.state.options} series={this.state.series} type="scatter" width={579} height={297} style={{margin: '24px 25px 7px 25px'}} />
         </DashScatterContainer>
