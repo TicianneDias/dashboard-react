@@ -53,7 +53,7 @@ class App extends Component {
                 <BsFillInfoCircleFill id="infoIcon" />
               </TooltipText>
               <TooltipBox>
-                <h5>Este é um modelo de dashboard em Barras com dados de 10 países</h5>
+                <h5>Modelo de dashboard em Barras com dados de 10 países</h5>
               </TooltipBox>
             </TooltipCard>
           </Title>
