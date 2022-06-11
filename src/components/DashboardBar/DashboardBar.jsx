@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
-import { Title } from "../../styles/CommunsStyles";
+import { Title, TooltipBox, TooltipCard, TooltipText } from "../../styles/CommunsStyles";
 import { DashBarContainer } from "./styles";
 import { BsFillInfoCircleFill } from 'react-icons/bs'
 
@@ -48,9 +48,14 @@ class App extends Component {
             <div>
               <h1>Barras</h1>
             </div>
-            <div>
-              <BsFillInfoCircleFill id="infoIcon" />
-            </div>
+            <TooltipCard>
+              <TooltipText>
+                <BsFillInfoCircleFill id="infoIcon" />
+              </TooltipText>
+              <TooltipBox>
+                <h5>Este é um modelo de dashboard em Barras com dados de 10 países</h5>
+              </TooltipBox>
+            </TooltipCard>
           </Title>
           <Chart options={this.state.options} series={this.state.series} type="bar" width={603} height={290} style={{margin: '29px 19px 7px 20px'}}/>
         </DashBarContainer>
