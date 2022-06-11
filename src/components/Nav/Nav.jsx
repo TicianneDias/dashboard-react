@@ -1,10 +1,13 @@
 import React from 'react'
+import DarkMode from '../DarkMode/DarkMode'
 import { NavBar } from './styles'
 
 const Nav = () => {
   return (
     <div>
-        <NavBar/>
+        <NavBar>
+          <DarkMode/>
+        </NavBar>
     </div>
   )
 }

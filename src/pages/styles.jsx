@@ -12,29 +12,31 @@ export const HomeContainer = styled.div`
 
     #subtitle {
         position: absolute;
-        color: var(--color-secundary);
+        color: var(--color-gray);
         font-size: 14px;
         line-height: 17.07px;
         top: 166px;
         left: 28px;
+        text-shadow: 0.1px 0.1px 0.1px var(--color-secundary);
 
     }
 
 `;
 
 export const FilterButton = styled.button`
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     position: absolute;
     width: 100px;
     height: 40px;
     top: 135px;
     right: 24px;
     border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
     #filterIcon {
         width: 13.32px;

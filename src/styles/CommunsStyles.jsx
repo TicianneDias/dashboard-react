@@ -20,6 +20,10 @@ export const Title = styled.div`
             margin-left: 15.19px;
             color: var(--color-green);
             height: 15.62px;
+
+            &:hover {
+              color: var(--color-blue);
+            }
         }
     }
 `;
@@ -54,6 +58,7 @@ export const TooltipCard = styled.div`
 
     h5 {
         color: var(--color-primary);
+        font-size: 12px;
     }
   }
 `;

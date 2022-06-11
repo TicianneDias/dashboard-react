@@ -26,7 +26,14 @@ export default createGlobalStyle`
         max-width: 100vw;
         margin: 0 auto;
         padding: 5rem 1.2rem;
+    }
+    
+    body.light {
         background-color: var(--color-bg);
+    }
+
+    body.dark {
+        background-color: var(--color-secundary);
     }
 
     ::-webkit-scrollbar {

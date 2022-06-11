@@ -13,7 +13,7 @@ const Home = () => {
       <GlobalStyles/>
       <HomeContainer>
         <h1>Dashboard</h1>
-        <h3 id='subtitle'>Desafio Técnico FrontEnd</h3>
+        <h3 id='subtitle'>Desafio Técnico Front-End</h3>
         <FilterButton>
           <div>
             <FaFilter id='filterIcon'/>
