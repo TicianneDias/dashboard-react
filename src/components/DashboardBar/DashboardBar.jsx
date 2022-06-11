@@ -52,7 +52,7 @@ class App extends Component {
               <BsFillInfoCircleFill id="infoIcon" />
             </div>
           </Title>
-          <Chart options={this.state.options} series={this.state.series} type="bar" width={603} height={290} style={{margin: '29px 38px 14px 39px'}}/>
+          <Chart options={this.state.options} series={this.state.series} type="bar" width={603} height={290} style={{margin: '29px 19px 7px 20px'}}/>
         </DashBarContainer>
 
 
