@@ -42,15 +42,11 @@ class Bar extends Component {
           ],
         }
       },
-    
-    
     };
   }
 
-
   render() {
     return (
-
 
         <DashBarContainer>
           <Title>
@@ -59,7 +55,7 @@ class Bar extends Component {
             </div>
             <TooltipCard>
               <TooltipText>
-                <BsFillInfoCircleFill id="infoIcon" />
+                <BsFillInfoCircleFill id="infoIcon"/>
               </TooltipText>
               <TooltipBox>
                 <h5>Modelo de dashboard em Barras com dados de 10 países</h5>
@@ -70,13 +66,11 @@ class Bar extends Component {
               options={this.state.options} 
               series={this.state.series} 
               type="bar" 
-              width={603} 
+              width={"100%"} 
               height={290} 
               style={{margin: '29px 19px 7px 20px'}}
                 />
         </DashBarContainer>
-
-
 
     );
   }

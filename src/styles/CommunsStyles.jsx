@@ -31,6 +31,7 @@ export const Title = styled.div`
 export const TooltipText = styled.div`
   cursor: pointer;
 `;
+
 export const TooltipBox = styled.div`
   position: absolute;
   top: calc(100% + 10px);
@@ -48,6 +49,7 @@ export const TooltipBox = styled.div`
     position: absolute;
   }
 `;
+
 export const TooltipCard = styled.div`
   position: relative;
   & ${TooltipText}:hover + ${TooltipBox} {
@@ -60,5 +62,6 @@ export const TooltipCard = styled.div`
         color: var(--color-primary);
         font-size: 12px;
     }
+    
   }
 `;

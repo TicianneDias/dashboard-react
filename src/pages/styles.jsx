@@ -77,6 +77,12 @@ export const LabelContainer = styled.div`
     position: absolute;
     top: 142px;
     right: 135px;
+
+    @media(max-width: 595px) {
+        top: 185px;
+        right: 24px;
+    }
+
     label {
         display: flex;
         flex-direction: row;

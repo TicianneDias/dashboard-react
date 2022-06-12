@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Nav from '../components/Nav/Nav'
 import DashboardBar from '../components/DashboardBar/DashboardBar'
 import DashboardScatter from '../components/DashboardScatter/DashboardScatter'
@@ -47,6 +47,7 @@ const Home = () => {
                 name="checkBar" 
                 id="checkBar" 
                 onClick={handleClickBar}
+                checked={showBar}
                 />
           </label>
           <label>
@@ -56,6 +57,7 @@ const Home = () => {
                 name="checkScatter" 
                 id="checkScatter" 
                 onClick={handleClickScatter}
+                checked={showScatter}
                 />
           </label>
         </LabelContainer>
