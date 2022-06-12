@@ -6,6 +6,7 @@ export default createGlobalStyle`
 
     :root {
         --color-white: #fff;
+        --color-dark: #101010f2;
         --color-bg: #F6F6F6;
         --color-gray: #CEC6CE;
         --color-primary: #5D405C;
@@ -30,10 +31,18 @@ export default createGlobalStyle`
     
     body.light {
         background-color: var(--color-bg);
+
+        h1 {
+            color: var(--color-primary);
+        }
     }
 
     body.dark {
-        background-color: var(--color-secundary);
+        background-color: var(--color-dark);
+        h1 {
+            
+        color: var(--color-white);
+        }
     }
 
     ::-webkit-scrollbar {

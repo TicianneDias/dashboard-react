@@ -12,12 +12,11 @@ export const HomeContainer = styled.div`
 
     #subtitle {
         position: absolute;
-        color: var(--color-gray);
+        color: var(--color-secundary);
         font-size: 14px;
         line-height: 17.07px;
         top: 166px;
         left: 28px;
-        text-shadow: 0.1px 0.1px 0.1px var(--color-secundary);
 
     }
 
