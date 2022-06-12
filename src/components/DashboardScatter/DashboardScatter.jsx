@@ -4,7 +4,7 @@ import { DashScatterContainer } from "./styles";
 import { Title, TooltipBox, TooltipCard, TooltipText } from "../../styles/CommunsStyles";
 import { BsFillInfoCircleFill } from 'react-icons/bs'
 
-class App extends Component {
+class Scatter extends Component {
     constructor(props) {
         super(props);
 
@@ -65,11 +65,18 @@ class App extends Component {
               </TooltipBox>
             </TooltipCard>
           </Title>
-          <Chart options={this.state.options} series={this.state.series} type="scatter" width={579} height={297} style={{margin: '24px 25px 7px 25px'}} />
+          <Chart 
+              options={this.state.options}
+              series={this.state.series}
+              type="scatter"
+              width={579}
+              height={297}
+              style={{margin: '24px 25px 7px 25px'}} 
+              />
         </DashScatterContainer>
 
     );
   }
 }
 
-export default App;
+export default Scatter;

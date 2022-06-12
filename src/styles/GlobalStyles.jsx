@@ -32,16 +32,16 @@ export default createGlobalStyle`
     body.light {
         background-color: var(--color-bg);
 
-        h1 {
+        h1, h5 {
             color: var(--color-primary);
         }
     }
 
     body.dark {
         background-color: var(--color-dark);
-        h1 {
-            
-        color: var(--color-white);
+
+        h1, h5 {     
+            color: var(--color-white);
         }
     }
 

@@ -37,14 +37,21 @@ export const FilterButton = styled.button`
     align-items: center;
     justify-content: space-around;
 
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.4s ease-in-out;
+    }
+
     #filterIcon {
         width: 13.32px;
         height: 11.99px;
+        
     }
 
     h3 {
         font-size: 14px;
     }
+
 `;
 
 export const Dashboards = styled.div`
@@ -59,4 +66,31 @@ export const Dashboards = styled.div`
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    
+`;
+
+export const LabelContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 142px;
+    right: 135px;
+    label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+
+        input {
+            cursor: pointer;
+        }
+        
+        h5 {
+            margin-right: 5px;
+        }
+    }
+
 `;
