@@ -11,7 +11,7 @@ export const Title = styled.div`
         align-items: center;
         justify-content: center;
 
-        h1 {
+        h2 {
             font-size: 16px;
             color: var(--color-primary);
         }

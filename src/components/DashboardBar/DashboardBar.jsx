@@ -46,7 +46,7 @@ class App extends Component {
         <DashBarContainer>
           <Title>
             <div>
-              <h1>Barras</h1>
+              <h2>Barras</h2>
             </div>
             <TooltipCard>
               <TooltipText>

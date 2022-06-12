@@ -54,7 +54,7 @@ class App extends Component {
         <DashScatterContainer>
           <Title>
             <div>
-              <h1>Scatter</h1>
+              <h2>Scatter</h2>
             </div>
             <TooltipCard>
               <TooltipText>
