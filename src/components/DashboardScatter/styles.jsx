@@ -7,4 +7,9 @@ export const DashScatterContainer = styled.div`
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: var(--color-white);
     margin-bottom: 10px;
+
+    @media (max-width: 720px) {
+        width: auto;
+        height: auto;
+    }
 `;
