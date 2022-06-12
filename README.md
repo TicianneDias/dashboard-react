@@ -14,7 +14,7 @@
 
 ## 🎞 Demo: <a id="demo"></a>
 <div align="center">
-    🚧 Em construção
+    <img alt="Demonstração do site, mostrando os dashboards (em barra e scatter), tooltips, darkmode e os filtros dos dashboards" src="page.gif" style="width:600px">
 </div>
 
 <br> <br> <br>
@@ -25,7 +25,7 @@
 <br> <br> <br>
 
 ## 💡 Sobre: <a id="sobre"></a>
-🚧 Em construção
+Projeto desenvolvido para mostrar dois Dashboards da biblioteca ApexCharts, um em Barras e outro em Scatter, utilizado um protótipo do Figma, acrescentando botão para mudança de tema para Dark Mode, Tooltips nas informações dos Dashboards e usabilidade no botão de Filtrar.
 
 <br>
 <br><br>
@@ -42,6 +42,7 @@ No seu terminal utilize: <code> git clone https://github.com/TicianneDias/projet
 Entre na pasta: <code>cd projeto-dashboard</code><br>
 Instale as dependências necessárias com: <code>npm install</code><br>
 Projeto foi utilizado com Vite, para rodar use: <code>npm run dev</code><br>
+Para entrar no site colocado no Netlify, <a href='https://projeto-dashboard-react.netlify.app/'>clique aqui.</a>
     
 </div>
 
@@ -52,8 +53,13 @@ Projeto foi utilizado com Vite, para rodar use: <code>npm run dev</code><br>
 
 ## 💻 Tecnologias: <a id="tecnologias"></a>
 <ul>
+    <li><code>Node v16.15.1</code></li>
     <li>React.js</li>
-    <li>🚧 Em construção</li>
+    <li>ApexCharts</li>
+    <li>Figma</li>
+    <li>Styled-Components</li>
+    <li>Hooks: useState</li>
+    <li>LocalStorage para o tema</li>
 </ul>
 
 

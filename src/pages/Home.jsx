@@ -39,28 +39,28 @@ const Home = () => {
           </div>
         </FilterButton>
         {filter && (
-        <LabelContainer>
-          <label>
-            <h5>Barras</h5>
-            <input 
+          <LabelContainer>
+            <label>
+              <h5>Barras</h5>
+              <input 
                 type="checkbox" 
                 name="checkBar" 
                 id="checkBar" 
                 onClick={handleClickBar}
                 checked={showBar}
                 />
-          </label>
-          <label>
-            <h5>Scatter</h5>
-            <input 
+            </label>
+            <label>
+              <h5>Scatter</h5>
+              <input 
                 type="checkbox" 
                 name="checkScatter" 
                 id="checkScatter" 
                 onClick={handleClickScatter}
                 checked={showScatter}
                 />
-          </label>
-        </LabelContainer>
+            </label>
+          </LabelContainer>
         )}
       </HomeContainer>
       <Dashboards>
