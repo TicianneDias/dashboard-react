@@ -4,7 +4,7 @@ import { Title, TooltipBox, TooltipCard, TooltipText } from "../../styles/Commun
 import { DashBarContainer } from "./styles";
 import { BsFillInfoCircleFill } from 'react-icons/bs'
 
-class App extends Component {
+class Bar extends Component {
   constructor(props) {
     super(props);
 
@@ -28,8 +28,17 @@ class App extends Component {
           enabled: false
         },
         xaxis: {
-          categories: ['Coréia do Sul', 'Canadá', 'Reino Unido', 'Holanda', 'Itália', 'França', 'Japão',
-            'Estados Unidos', 'China', 'Alemanha'
+          categories: [
+              'Coréia do Sul',
+              'Canadá',
+              'Reino Unido',
+              'Holanda',
+              'Itália',
+              'França',
+              'Japão',
+              'Estados Unidos',
+              'China',
+              'Alemanha'
           ],
         }
       },
@@ -57,7 +66,14 @@ class App extends Component {
               </TooltipBox>
             </TooltipCard>
           </Title>
-          <Chart options={this.state.options} series={this.state.series} type="bar" width={603} height={290} style={{margin: '29px 19px 7px 20px'}}/>
+          <Chart 
+              options={this.state.options} 
+              series={this.state.series} 
+              type="bar" 
+              width={603} 
+              height={290} 
+              style={{margin: '29px 19px 7px 20px'}}
+                />
         </DashBarContainer>
 
 
@@ -66,4 +82,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Bar;

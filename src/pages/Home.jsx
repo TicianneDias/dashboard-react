@@ -1,20 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Nav from '../components/Nav/Nav'
 import DashboardBar from '../components/DashboardBar/DashboardBar'
 import DashboardScatter from '../components/DashboardScatter/DashboardScatter'
-import { Dashboards, FilterButton, HomeContainer } from './styles'
+import { Dashboards, FilterButton, HomeContainer, LabelContainer } from './styles'
 import { FaFilter } from 'react-icons/fa'
-import GlobalStyles from '../styles/GlobalStyles'
 
 const Home = () => {
+  const[filter, setFilter] = useState(false)
+  const[showBar, setShowBar] = useState(true)
+  const[showScatter, setShowScatter] = useState(true)
+  
+  const handleClick = () => {
+    setFilter(visible => !visible)
+  }
+
+  const handleClickBar = () => {
+    setShowBar(visible => !visible)
+  }
+
+  const handleClickScatter = () => {
+    setShowScatter(visible => !visible)
+  }
+
   return (
     <>
       <Nav/>
-      <GlobalStyles/>
       <HomeContainer>
         <h1>Dashboard</h1>
         <h3 id='subtitle'>Desafio Técnico Front-End</h3>
-        <FilterButton>
+        <FilterButton
+          onClick={handleClick}
+            >
           <div>
             <FaFilter id='filterIcon'/>
           </div>
@@ -22,10 +38,36 @@ const Home = () => {
             <h3>Filtrar</h3>
           </div>
         </FilterButton>
+        {filter && (
+        <LabelContainer>
+          <label>
+            <h5>Barras</h5>
+            <input 
+                type="checkbox" 
+                name="checkBar" 
+                id="checkBar" 
+                onClick={handleClickBar}
+                />
+          </label>
+          <label>
+            <h5>Scatter</h5>
+            <input 
+                type="checkbox" 
+                name="checkScatter" 
+                id="checkScatter" 
+                onClick={handleClickScatter}
+                />
+          </label>
+        </LabelContainer>
+        )}
       </HomeContainer>
       <Dashboards>
+        {showBar && (
           <DashboardBar/>
+        )}
+        {showScatter && (
           <DashboardScatter/>
+        )}
       </Dashboards>
     </>
   )
